@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,700&display=swap');
+
+.body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.container {
+  background: #f2f2f2;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px;
+}
+h1 {
+  padding: 0px;
+  margin: 0 auto;
+}
+.filter-area {
+  background: #fff;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.filter-area ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.filter-area ul li {
+  width: 50%;
+  float: left;
+}
