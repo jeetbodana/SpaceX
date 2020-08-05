@@ -1,15 +1,62 @@
 <div class="container">
-  <h1>SpaceX Launch Programs</h1>
+  <div class="page-wrapper">
+    <h1>SpaceX Launch Programs</h1>
 
-  <div class="filter-area">
-    <h4>Filter</h4>
-    <h6>Launch Year</h6>
-    <ul>
-      <li><button type="button" class="fbtn">2006</button></li>
-      <li><button type="button" class="fbtn">2007</button></li>
-    </ul>
-    <h6>Successful Lunch</h6>
-    <h6>Successful Landing</h6>
+    <div class="filter-area">
+      <h4>Filter</h4>
+      <h6>Launch Year</h6>
+      <ul>
+        <li><button type="button" class="fbtn">2006</button></li>
+        <li><button type="button" class="fbtn">2007</button></li>
+        <li><button type="button" class="fbtn">2008</button></li>
+        <li><button type="button" class="fbtn">2009</button></li>
+        <li><button type="button" class="fbtn">2010</button></li>
+        <li><button type="button" class="fbtn">2011</button></li>
+        <li><button type="button" class="fbtn">2012</button></li>
+        <li><button type="button" class="fbtn">2013</button></li>
+        <li><button type="button" class="fbtn">2014</button></li>
+        <li><button type="button" class="fbtn">2015</button></li>
+        <li><button type="button" class="fbtn">2016</button></li>
+        <li><button type="button" class="fbtn">2017</button></li>
+        <li><button type="button" class="fbtn">2018</button></li>
+        <li><button type="button" class="fbtn">2019</button></li>
+        <li><button type="button" class="fbtn">2020</button></li>
+      </ul>
+      <h6>Successful Lunch</h6>
+      <ul>
+        <li><button type="button" class="fbtn">True</button></li>
+        <li><button type="button" class="fbtn">False</button></li>
+      </ul>
+      <h6>Successful Landing</h6>
+      <ul>
+        <li><button type="button" class="fbtn" (click)="btnClick()" >True</button></li>
+        <li><button type="button" class="fbtn">False</button></li>
+      </ul>
+    </div>
+
+    <div class="cards-area">
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="cardbox">
+            <img src="assets/images/img01.jpg" alt="">
+            <h3> FalconSat #1</h3>
+            <strong> Mission Ids: </strong>
+            <ul>
+              <li>
+                list Mission Ids
+              </li>
+            </ul>
+
+            <strong>Launch Year:</strong> 2006 <br>
+            <strong>Successful Launch: </strong> false <br>
+            <strong>Successful Landing :</strong> Launch_landing
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
 </div>
