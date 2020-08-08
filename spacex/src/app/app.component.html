@@ -37,27 +37,32 @@
     <div class="cards-area">
 
       <div class="row">
-        <div class="col-md-3">
-          <div class="cardbox">
-            <img src="assets/images/img01.jpg" alt="">
-            <h3> FalconSat #1</h3>
-            <strong> Mission Ids: </strong>
-            <ul>
-              <li>
-                list Mission Ids
-              </li>
-            </ul>
-
-            <strong>Launch Year:</strong> 2006 <br>
-            <strong>Successful Launch: </strong> false <br>
-            <strong>Successful Landing :</strong> Launch_landing
+        <ng-container *ngFor="let space of spacex">
+          <div class="col-md-3">
+            <div class="cardbox">
+              <img src="assets/images/img01.jpg" alt="">
+              <h2>FaIconSat #1</h2>
+              <h3> {{space.name}}</h3>
+              <h3> {{space.id}}</h3>
+              <strong> Mission Ids: </strong>
+              <ul>
+                <li>
+                  list Mission Ids
+                </li>
+              </ul>
+              <strong>Launch Year:</strong> 2006 <br>
+              <strong>Successful Launch: </strong> false <br>
+              <strong>Successful Landing :</strong> Launch_landing
+            </div>
           </div>
-        </div>
+        </ng-container>
       </div>
 
     </div>
 
   </div>
+
+  <h2>{{developerInfo}}</h2>
 
 </div>
 

@@ -8,20 +8,18 @@ import { DataService } from './data.service'
 })
 export class AppComponent implements OnInit {
   title = 'spacex';
-  developerInfo = "Jitendra Bodana"
+  developerInfo = "Jitendra Bodana";
+  
 
-  constructor(
-    private _dataService:DataService
-  ){}
-
+  constructor(private _dataService:DataService){}
+  // spacex={};
   spacex={};
   ngOnInit() {
-    // this.spacex = this._dataService.spacex;
-    this._dataService.spacex().subscribe(spacexData => this.spacex = spacexData)
+    // this.spacex = this._dataService.space;
 
-    console.log(this.spacex);
-    
-    
+    this._dataService.space().subscribe(spacexData => this.spacex = spacexData)
+
+    // console.log(this.spacex);
   }
 
   btnClick(){

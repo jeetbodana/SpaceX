@@ -16,7 +16,14 @@ export class DataService {
     alert("Thanks for subscribe.")
   }
 
-  spacex(): Observable<any>{
+  // space=[
+  //   {name: "Macbook Air", id:"01"},
+  //   {name: "Macbook Pro", id:"02"},
+  //   {name: "Macbook iPad", id:"03"},
+  //   {name: "Iphone", id:"04"}
+  // ];
+
+  space(): Observable<any>{
     return this.http.get('https://api.spaceXdata.com/v3/launches?limit=100');
   }
 
