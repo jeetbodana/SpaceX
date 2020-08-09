@@ -40,8 +40,8 @@
         <ng-container *ngFor="let space of spacex">
           <div class="col-md-3">
             <div class="cardbox">
-              <img src="assets/images/img01.jpg" alt="">
-              <h2>FaIconSat #1</h2>
+              <img src="{{space.links.mission_patch}}" alt="">
+              <h2>{{space.mission_name}} #{{space.flight_number}} </h2>
               <h3> {{space.name}}</h3>
               <h3> {{space.id}}</h3>
               <strong> Mission Ids: </strong>
@@ -50,8 +50,8 @@
                   list Mission Ids
                 </li>
               </ul>
-              <strong>Launch Year:</strong> 2006 <br>
-              <strong>Successful Launch: </strong> false <br>
+              <strong>Launch Year:</strong> {{space.launch_year}} <br>
+              <strong>Successful Launch: </strong> {{space.launch_success}} <br>
               <strong>Successful Landing :</strong> Launch_landing
             </div>
           </div>

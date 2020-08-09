@@ -17,9 +17,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     // this.spacex = this._dataService.space;
 
-    this._dataService.space().subscribe(spacexData => this.spacex = spacexData)
-
-    // console.log(this.spacex);
+    this._dataService.space().subscribe(spacexData => this.spacex = spacexData);
   }
 
   btnClick(){
