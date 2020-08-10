@@ -6,21 +6,9 @@
       <h4>Filter</h4>
       <h6>Launch Year</h6>
       <ul>
-        <li><button type="button" class="fbtn">2006</button></li>
-        <li><button type="button" class="fbtn">2007</button></li>
-        <li><button type="button" class="fbtn">2008</button></li>
-        <li><button type="button" class="fbtn">2009</button></li>
-        <li><button type="button" class="fbtn">2010</button></li>
-        <li><button type="button" class="fbtn">2011</button></li>
-        <li><button type="button" class="fbtn">2012</button></li>
-        <li><button type="button" class="fbtn">2013</button></li>
-        <li><button type="button" class="fbtn">2014</button></li>
-        <li><button type="button" class="fbtn">2015</button></li>
-        <li><button type="button" class="fbtn">2016</button></li>
-        <li><button type="button" class="fbtn">2017</button></li>
-        <li><button type="button" class="fbtn">2018</button></li>
-        <li><button type="button" class="fbtn">2019</button></li>
-        <li><button type="button" class="fbtn">2020</button></li>
+        <ng-container *ngFor="let lyear of lyears">
+          <li><button type="button" (click)="btnClick()" class="fbtn">{{lyear.year}}</button></li>
+        </ng-container>
       </ul>
       <h6>Successful Lunch</h6>
       <ul>
@@ -39,20 +27,20 @@
       <div class="row">
         <ng-container *ngFor="let space of spacex">
           <div class="col-md-3">
-            <div class="cardbox">
-              <img src="{{space.links.mission_patch}}" alt="">
+            <div class="cardbox mb-3">
+              <div class="imgbox">
+                <img src="{{space.links.mission_patch}}" class="img-responsive" alt="">
+              </div>
               <h2>{{space.mission_name}} #{{space.flight_number}} </h2>
-              <h3> {{space.name}}</h3>
-              <h3> {{space.id}}</h3>
               <strong> Mission Ids: </strong>
-              <ul>
+              <ul >
                 <li>
-                  list Mission Ids
+                  {{space.mission_id}}
                 </li>
               </ul>
-              <strong>Launch Year:</strong> {{space.launch_year}} <br>
-              <strong>Successful Launch: </strong> {{space.launch_success}} <br>
-              <strong>Successful Landing :</strong> Launch_landing
+              <p><strong>Launch Year:</strong> {{space.launch_year}} <br></p>
+              <p><strong>Successful Launch: </strong> {{space.launch_success}} <br></p>
+              <p><strong>Successful Landing :</strong> {{space.launch_landing}}</p>
             </div>
           </div>
         </ng-container>
@@ -60,9 +48,9 @@
 
     </div>
 
-  </div>
+    <h2 class="copyright text-center">Developed by: {{developerInfo}}</h2>
 
-  <h2>{{developerInfo}}</h2>
+  </div>
 
 </div>
 

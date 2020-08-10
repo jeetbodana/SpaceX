@@ -1,0 +1,19 @@
+.col-md-3 {
+  display: flex;
+}
+.cardbox {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+.cards-area {
+  height: 780px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+h2.copyright {
+  float: left;
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px 0;
+}
